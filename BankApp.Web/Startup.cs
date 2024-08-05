@@ -27,7 +27,7 @@ namespace BankApp.Web
             {
                 opt.UseSqlServer("server=DESKTOP-0DTVQK3\\SQLEXPRESS; database=BankDb; integrated security=true;");
             });
-
+            services.AddScoped(typeof(IGenericRepository<>),typeof(GenericRepository<>));
             services.AddScoped<IApplicationUserRepository,ApplicationUserRepository>();
             services.AddScoped<IUserMapper,UserMapper>();
             services.AddScoped<IAccountMapper,AccountMapper>();
