@@ -2,6 +2,7 @@ using BankApp.Web.Data.Context;
 using BankApp.Web.Data.Interfaces;
 using BankApp.Web.Data.Mapping;
 using BankApp.Web.Data.Repositories;
+using BankApp.Web.Data.UnitOfWork;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -27,11 +28,12 @@ namespace BankApp.Web
             {
                 opt.UseSqlServer("server=DESKTOP-0DTVQK3\\SQLEXPRESS; database=BankDb; integrated security=true;");
             });
-            services.AddScoped(typeof(IGenericRepository<>),typeof(GenericRepository<>));
-            services.AddScoped<IApplicationUserRepository,ApplicationUserRepository>();
+            // services.AddScoped(typeof(IGenericRepository<>),typeof(GenericRepository<>));
+            // services.AddScoped<IApplicationUserRepository,ApplicationUserRepository>();
+            // services.AddScoped<IAccountRepository,AccountRepository>();
+            services.AddScoped<IUow, Uow>();
             services.AddScoped<IUserMapper,UserMapper>();
             services.AddScoped<IAccountMapper,AccountMapper>();
-            services.AddScoped<IAccountRepository,AccountRepository>();
             services.AddControllersWithViews();
         }
 

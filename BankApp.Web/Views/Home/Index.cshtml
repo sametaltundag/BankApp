@@ -10,6 +10,7 @@
             <th>Name</th>
             <th>Surname</th>
             <th>Account Count</th>
+            <th>Process</th>
         </tr>
     </thead>
 
@@ -21,7 +22,8 @@
                 <td>@item.Surname</td>
                 <td><getAccountCount application-user-id="@item.Id"></getAccountCount> </td>
                 <td>
-                    <a asp-action="Create" asp-controller="Account" asp-route-id="@item.Id">Create New Account</a>
+                    <a class="btn btn-sm btn-outline-success" asp-action="Create" asp-controller="Account" asp-route-id="@item.Id">Create New Account</a>
+                    <a class="btn btn-sm btn-outline-warning" asp-action="GetByUserId" asp-controller="Account" asp-route-userId="@item.Id">Get Account</a>
                 </td>
             </tr>
         }

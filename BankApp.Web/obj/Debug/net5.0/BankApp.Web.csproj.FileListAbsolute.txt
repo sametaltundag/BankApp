@@ -147,3 +147,5 @@ C:\Users\Maraz\Desktop\BankApp\BankApp.Web\bin\Debug\net5.0\zh-Hant\Microsoft.Co
 C:\Users\Maraz\Desktop\BankApp\BankApp.Web\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\Maraz\Desktop\BankApp\BankApp.Web\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\Maraz\Desktop\BankApp\BankApp.Web\obj\Debug\net5.0\Razor\Views\Account\Create.cshtml.g.cs
+C:\Users\Maraz\Desktop\BankApp\BankApp.Web\obj\Debug\net5.0\Razor\Views\Account\GetByUserId.cshtml.g.cs
+C:\Users\Maraz\Desktop\BankApp\BankApp.Web\obj\Debug\net5.0\Razor\Views\Account\SendMoney.cshtml.g.cs

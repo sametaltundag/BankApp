@@ -13,6 +13,5 @@
         public decimal Balance { get; set; }
         public int AccountNumber { get; set; }
         public int ApplicationUserId { get; set; }
-        public string FullName { get; set; }
     }
 }
